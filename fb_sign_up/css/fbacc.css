@@ -12,7 +12,7 @@ body{
 	padding-bottom: 50px;
 }
 .main{
-	margin: 0% 35%;
+	margin: 0% 33%;
 	background-color: #164d99;
 }
 .logo{
@@ -20,7 +20,7 @@ body{
 }
 .formdiv{
 	border-radius: 5px;
-	padding-bottom: 10px;
+	padding: 10px;
 	box-shadow: 0px 1px 5px 2px rgb(30 30 30 / 80%);
 	background-color: white;
 }
