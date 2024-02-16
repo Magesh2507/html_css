@@ -1,0 +1,178 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.total{
+	width: 100%;
+	background-color: #164d99;
+	padding-bottom: 50px;
+}
+.main{
+	margin: 0% 35%;
+	background-color: #164d99;
+}
+.logo{
+	text-align: center;
+}
+.formdiv{
+	border-radius: 5px;
+	padding-bottom: 10px;
+	box-shadow: 0px 1px 5px 2px rgb(30 30 30 / 80%);
+	background-color: white;
+}
+.heading{
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding: 10px;
+}
+.heading h2,.heading span{
+	margin: 5px auto;
+	padding: 0;
+}
+.input{
+	display: flex;
+	margin: 10px auto;
+	width: 100%;
+}
+.fname{
+	display: flex;
+	flex: 1;
+}
+.sname{
+	display: flex;
+	flex: 1;
+}
+.fname input,.sname input{
+	width: 100%;
+	border: 1px solid lightgray;
+	margin: 0 10px;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+.mail,.nwpw,.pronoun,.optional{
+	display: flex;
+	text-align: center;
+	width: 100%;
+}
+.mail input,.nwpw input,.pronoun select,.optional input{
+	width: 100%;
+	border: 1px solid lightgray;
+	padding: 10px 5px;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+.nwpw{
+	margin-top: 10px;
+}
+.para p,.tc p{
+	font-size: 11px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}	
+.dmy{
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+.date,.month,.year{
+	flex: 1;
+	text-align: center;
+	margin: 5px 10px;
+}
+.dmy select{
+	border: 1px solid lightgray;
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+}
+.gender{
+	display: flex;
+
+}
+.male,.female,.custom{
+	width: 100%;
+	border: 1px solid lightgray;
+	background-color: white;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: center;
+	border-radius: 5px;
+	height: 35px;
+	margin: 5px 10px;
+}
+.pronoun{
+	margin: 10px auto;
+}
+.tc a{
+	text-decoration: none;
+	color: blue;
+}
+.tc p{
+	opacity: 0.7;
+}
+.signup{
+	text-align: center;
+}
+.signup button{
+	width: 50%;
+	margin: 10px auto;
+	color: white;
+	background-color: #06ab06;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	border: none;
+	font-size: large;
+	font-weight: 600;
+}
+.already{
+	text-align: center;
+	margin: 5px auto;
+}
+.already a{
+	text-decoration: none;
+	color: blue;
+}
+.bot{
+	margin: 10px auto;
+}
+.lang{
+	margin: 10px 15%;
+	height: 50px;
+	display: flex;
+	padding-bottom: 5px;
+	align-items: flex-end;
+	border-bottom: 1px solid lightgray;
+}
+.lang a{
+	font-size: small;
+}
+.copy{
+	margin: 10px 15%;
+	font-size: x-small;
+	opacity: 0.7;
+}
+
+@media(max-width: 800px){
+	.main{
+		margin: 0% 10%;
+	}
+}
+
+@media(max-width: 1000px){
+	.main{
+		margin: 0% 20%;
+	}
+}
+
+@media(max-width: 600px){
+		.main{
+		margin: 0% 2%;
+	}
+}

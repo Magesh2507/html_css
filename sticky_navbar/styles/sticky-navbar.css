@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.main{
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	font-family: sans-serif;
+}
+
+.head{
+	display: flex;
+	position: fixed;
+	background-color: black;
+	height: 75px;
+	width: 100vw;
+	color: white;
+}
+
+.logo{
+	flex: 1;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 800;
+	padding: 10px;
+	font-family: system-ui;
+}
+
+.nav{
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+ul{
+	list-style: none;
+	display: flex;
+}
+
+li{
+	font-size: 20px;
+	margin: auto 15px;
+}
+
+.pic{
+	background-image: url(images/food.jpg);
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: 700;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h2{
+	font-size: 30px;
+	margin-bottom:10px;
+}
+
+p{
+	font-size: 20px;
+}
+
+.divs{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.head.active{
+	background-color: white;
+	color: black;
+}
