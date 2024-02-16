@@ -8,7 +8,7 @@ body{
 }
 .total{
 	width: 100%;
-	background-color: #164d99;
+	background-color: #385899;
 	padding-bottom: 50px;
 }
 .main{
@@ -17,6 +17,7 @@ body{
 }
 .logo{
 	text-align: center;
+	background-color: #385899;
 }
 .formdiv{
 	border-radius: 5px;
