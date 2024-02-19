@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header-section">
+            <header class="header">
+                <img class="logo" src="logos/zohocorp.jpeg">
+                <ul class="navbar">
+                    <li class="navlinks active"><a href="#">Requests</a></li>
+                    <li class="navlinks"><a href="#">Activities</a></li>
+                    <li class="navlinks"><a href="#">KB</a></li>
+                    <li class="navlinks"><a href="#">Employees</a></li>
+                    <li class="navlinks"><a href="#">Analytics</a></li>
+                    <li class="navlinks"><a href="#">Commitments</a></li>
+                    <li class="navlinks"><a href="#">Community</a></li>
+                    <li class="navlinks"><a href="#">IM</a></li>
+                    <li class="navlinks"><a href="#">Social</a></li>
+                </ul>
+            </header>
+        </section>
+        <section class="content-area">
+            <div class="content-container">
+                <div class="list-container">
+                    <div class="flex">
+                        <div class="categories">
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-th-large"></i></span>
+                                    <span>Head Quarters</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-rss"></i></span>
+                                    <span>Team Feeds</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-clipboard"></i></span>
+                                    <span>Views</span>
+                                    <div class="search-icon-div">
+                                        <span><i class="fa fa-search"></i></span>
+                                    </div>
+                                </div>
+                                <div class="plus-icon-div"><span><i class="fa fa-plus"></i></span></div>
+                            </div>
+                        </div>
+                        <div class="starred-view-container">
+                            <div class="starred-views bold-text">
+                                <div class="category-name">
+                                    <span class="font-highlight">Starred Views</span>
+                                </div>
+                                <div class="count-info bold-text"><span><i class="fa fa-angle-down"></i></span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Waiting for UAT ticket</span>
+
+                                </div>
+                                <div class="count-info"><span>40</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Verification pending</span>
+
+                                </div>
+                                <div class="count-info"><span>25</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Initiated</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Iteration Builds in CI</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Waiting for UT AT review</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Manickam UT review Tickets</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Vinoth UT review Tickets</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Veera UT review Tickets</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                            <div class="starred-views">
+                                <div class="category-name">
+
+                                    <span>Jeyavani UT review Tickets</span>
+
+                                </div>
+                                <div class="count-info"><span>0</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-user"></i></span>
+                                    <span>Agent Queue</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-users"></i></span>
+                                    <span>Team Queue</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="categories-title">
+                                <div class="category-name">
+                                    <span class="category-icons"><i class="fa fa-tag"></i></span>
+                                    <span>Tags</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="categories-title shrink-arrow">
+                        <div class="category-name" style="visibility: hidden;">
+                            <span class="category-icons"><i class="fa fa-clipboard"></i></span>
+                            <span>Views</span>
+                        </div>
+                        <div class="plus-icon-div"><span><i class="fa fa-chevron-left"></i></span></div>
+                    </div>
+
+
+                </div>
+                <div class="content-box">
+
+                    <div class="content-header">
+                        <div class="logo-div">
+                            <div class="content-logo">
+                                <span class="title-icon" href="#"><i class="fa fa-star"></i></span>
+                            </div>
+                            <div class="content-title">
+                                <p class="content-name">
+                                    CI Verification pending (25)
+                                    <span class="caret-down"><i class="fa fa-caret-down"></i></span>
+                                </p>
+                                <span class="content-icons"><i class="fa fa-filter"></i></span>
+                                <span class="content-icons"><i class="fa fa-pencil"></i></span>
+                                <span class="content-icons"><i class="fa fa-repeat"></i></span>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <p class="total-count">
+                                    Total Count
+                                <p>
+                            </div>
+                            <div class="classic-icon-div ">
+                                <span class="content-icons ">
+                                    <i class="fa fa-list-ul"></i>
+                                </span>
+                                <span class="content-icons mg">Classic View</span>
+                                <span class="content-icons "><i class="fa fa-caret-down"></i></span>
+                            </div>
+                            <div class="content-icon-div ellipsis-icon-div">
+                                <span class="content-icons"><i class="fa fa-ellipsis-h"></i></span>
+                            </div>
+                            <div class="content-icon-div">
+                                <span class="content-icons"><i class="fa fa-info"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages-div">
+                        <div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                           New layout Error code for create and update layout
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#976972</span>
+                                        <span>.</span>
+                                        <span class="">Vallinayagam
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>3 days ago</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">16 Feb 5:04 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Creating Tags with special characters
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#967674</span>
+                                        <span>.</span>
+                                        <span class="">Mohammed Ashiq
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>08 Feb</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">13 Feb 2:55 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            New language support in Desk - korean
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#956962</span>
+                                        <span>.</span>
+                                        <span class="">Guru
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>07 Feb</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">14 Feb 10:23 AM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            ICICI - Recycle Bin Dynamic query changes(all module)
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#946571</span>
+                                        <span>.</span>
+                                        <span class="">Tom
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>06 Feb</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">15 Feb 4:36 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Alert Generic Action Standalone Execution for workflows
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#936669</span>
+                                        <span>.</span>
+                                        <span class="">Akhil
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>05 Feb</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">11 Feb 11:04 AM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Cookie Based Redirection Handler to control no of threads
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#926978</span>
+                                        <span>.</span>
+                                        <span class="">Maharaja
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>04 Feb</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">10 Feb 3:30 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Update Agent preference for other modules
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#9716971</span>
+                                        <span>.</span>
+                                        <span class="">Prasad
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>31 Jan</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">09 Feb 8:49 AM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                           Help center API domain validation
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#909745</span>
+                                        <span>.</span>
+                                        <span class="">Alex
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>30 Jan</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">10 Feb 10:40 AM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Parent child AE Exception fixed
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#900972</span>
+                                        <span>.</span>
+                                        <span class="">Antro
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>29 Jan</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">10 Feb 12:14 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div><div class="messages-list">
+                            <div class="globe-logo-div">
+                                <a class="globe-icon" href="#"><i class="fa fa-globe"></i></a>
+                            </div>
+                            <div class="content-top">        
+                                <div class="messages-content">                                    
+                                    <div class="content-title">
+                                        <p class="content-name" >
+                                            Desk old logo displayed in this invitation expiry page
+                                        </p>
+                                    </div>
+                                    <div class="ticket-info">
+                                        <span class="ticket-id">#900001</span>
+                                        <span>.</span>
+                                        <span class="">namani
+                                            
+                                        </span><a class="id-card" href="#"><i class="fa fa-id-card-o"></i></a>
+                                        <span>.</span>
+                                        <span>Ticket, Customers & Products</span>
+                                        <span>.</span>
+                                        <a class="" href="#"><i class="fa fa-clock-o"></i></a>
+                                        <span>29 Jan</span>
+                                        <span>.</span>
+                                        <a class="hourglass" href="#"><i class="fa fa-hourglass-end"></i></a>
+                                        <span class="">12 Feb 4:04 PM</span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="reply-div span-err">
+                                        <span class="font-set ">
+                                            <span class="font-set" href="#">
+                                                <i class="fa fa-gear" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="font-set">Report verification pending</span>
+                                        </span>
+                                    </div>
+                                    <div class="message-div-icons ellipsis-icon-div">
+                                        <a class="ellipsis-icon font-set" href="#"><i class="fa fa-reorder f-a-icon">
+                                            <span class="abs-icons">5</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="message-div-icons">
+                                        <a class="comment-icon font-set" href="#"><i class="fa fa-commenting-o f-a-icon">
+                                            <span class="abs-icons">95</span>
+                                        </i></a>
+                                    </div>
+                                    <div class="globe-logo-div cv">
+                                        <a class="cv-icon" href="#">CV</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>
