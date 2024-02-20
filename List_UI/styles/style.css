@@ -145,6 +145,7 @@ body {
 
 .flex {
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .categories-title,
@@ -155,7 +156,7 @@ body {
 }
 
 .starred-view-container {
-    margin-top: 5px;
+    margin-block: 10px;
 }
 
 .starred-views {
@@ -169,7 +170,9 @@ body {
     border-left: 2px solid var(--light-color);
     cursor: pointer;
 }
-
+.starred-views .category-name{
+    font-size: 11px;
+}
 .category-name {
     font-size: var(--font-size-small);
     flex-grow: 1;
