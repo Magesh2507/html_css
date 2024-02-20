@@ -48,7 +48,6 @@ body {
 
 .header {
     max-height: 45px;
-    /* margin-top: 5px; */
     display: flex;
     background-color: var(--header-bg-dark-color);
 }
@@ -501,14 +500,20 @@ body {
 
 .content-header div,
 .actions,
-.content-top {
+.content-top,.messege-icons {
     display: flex;
     align-items: center;
 }
 
-.content-top {
+.messege-icons{
+    visibility: hidden;
+}
+.messages-list:hover .messege-icons{
+    visibility: visible;
+}
+
+.content-top,.messages-content {
     flex-grow: 1;
-    justify-content: space-between;
 }
 
 .content-title .content-name {
@@ -536,7 +541,7 @@ body {
     justify-content: center;
     width: 45px;
     border: 1px groove lightgray;
-    margin: auto 25px;
+    margin: auto 20px;
 }
 
 .actions div {
@@ -754,16 +759,23 @@ body {
     display: flex;
     align-items: center;
     border: 1px solid var(--light-bg-color);
+    border-inline-start: 3px solid var(--white-color);
+    cursor: pointer;
+    
 }
 
 .messages-list:hover {
-    border-inline-start: 3px solid var(--light-color);
+    border-inline-start: 3px solid var(--medium-color);
+    background-color: var(--whiteshade-bg-color);
+
 }
 
-.message-content {
+.messages-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
 }
+
 
 /* .user-profile-pic {
     display: inline-block;
