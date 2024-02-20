@@ -397,7 +397,7 @@ body {
     padding-bottom: 10px;
 } */
 
-.globe-icon {
+.globe-icon, .square-box {
     font-size: 20px;
 }
 
@@ -512,6 +512,15 @@ body {
 .messages-list:hover .messege-icons{
     visibility: visible;
 }
+.square-box{
+    display: none;
+}
+.messages-list:hover .globe-icon{
+    display: none;
+}
+.messages-list:hover .square-box{
+    display: inline;
+}
 
 .content-top,.messages-content {
     flex-grow: 1;
@@ -544,7 +553,9 @@ body {
     border: 1px groove lightgray;
     margin: auto 20px;
 }
-
+.messages-list:hover .globe-logo-div {
+    border: none;
+}
 .actions div {
     margin-right: 5px;
 }
